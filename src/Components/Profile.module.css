@@ -1,0 +1,21 @@
+.content{
+    grid-area: c;
+    background-color: darkgray;
+}
+.mystic{
+    height: 250px;
+}
+.mystic img{
+    height: 100%;
+    width: 100%;
+}
+
+.content  img{
+    height: 300px;
+}
+.item {
+    color: green;
+}
+.active {
+    color: blueviolet;
+}
