@@ -1,0 +1,21 @@
+.item {
+    color: green;
+    margin-top: 4%;
+}
+.active {
+    color: blueviolet;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    margin-top: 2%;
+}
+.imagePost img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.likes{
+    margin-left: 2%;
+}

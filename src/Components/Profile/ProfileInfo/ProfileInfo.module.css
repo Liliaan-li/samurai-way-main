@@ -1,0 +1,24 @@
+.mystic {
+    height: 300px;
+}
+
+.mystic img {
+    height: 100%;
+    width: 100%;
+}
+
+.row {
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.image {
+    width: 20%;
+}
+
+.image img {
+    width: 100%;
+}
