@@ -4,21 +4,27 @@
 }
 
 .dialogItems {
-    padding: 10px;
+    padding: 15px;
 }
 
 .nameItem {
     padding: 10px;
     color: darkorchid;
 }
-.nameItem {
+.active {
     color:cornflowerblue;
+    text-decoration: none;
 }
 
-.messages {
-    padding: 10px;
+.main{
+    display: flex;
+    margin-top: 5%;
 }
-
-.messageItem {
-
+.imagePost img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.messages{
+    padding: 40px;
 }

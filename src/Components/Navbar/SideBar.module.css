@@ -1,0 +1,27 @@
+.friends {
+    font-size: 40px;
+    font-weight: lighter;
+    margin-top: 40px;
+}
+
+.item {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+.main_row {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ava img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.friends_name{
+    color: white;
+}

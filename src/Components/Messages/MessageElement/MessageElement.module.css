@@ -1,0 +1,30 @@
+.messages {
+    padding: 10px;
+    width: 36%;
+}
+
+.messageItem {
+    background-color: white;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    color: black;
+    font-size: 15px;
+    margin: 0 12px 0;
+    min-width: 135px;
+    word-wrap: break-word;
+    position: relative;
+}
+.svg_appendix {
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    width: 0.5625rem;
+    height: 1.125rem;
+    font-size: 1rem !important;
+}
+
+.svg-appendix .corner {
+    fill: rgb(223 240 207);
+}

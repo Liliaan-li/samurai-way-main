@@ -1,7 +1,6 @@
 .nav {
     grid-area: n;
     background-color: darkslategray;
-    padding: 20px;
 }
 
 .item {
@@ -14,5 +13,5 @@
 }
 
 .each {
-    margin-bottom: 15px;
+    padding: 20px 20px 0;
 }

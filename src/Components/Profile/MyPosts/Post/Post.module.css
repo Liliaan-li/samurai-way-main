@@ -1,13 +1,10 @@
 .item {
-    color: green;
     margin-top: 4%;
-}
-.active {
-    color: blueviolet;
+    word-wrap: break-word;
+    margin-left: 3%;
 }
 .main{
     display: flex;
-    justify-content: space-around;
     width: 25%;
     margin-top: 2%;
 }
