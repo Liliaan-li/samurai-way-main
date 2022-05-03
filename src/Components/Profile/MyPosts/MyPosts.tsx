@@ -1,23 +1,18 @@
 import React, {ChangeEvent} from 'react';
 import s from './MyPosts.module.css'
 import Post from './Post/Post'
-import state, {postsType} from "../../Redux/State";
+import {MyPostsType} from "./MyPostsContainer";
 
-type postsPropsType = {
-    posts: Array<postsType>
-    addPost: (message: string) => void
-    newPostText: string
-    updatePostText: (newText: string) => void
-}
-const MyPosts = (props: postsPropsType) => {
-    let postElements = state.ProfilePage.posts.map(p => {
+const MyPosts = (props: MyPostsType) => {
+    let postElements = props.profilePage.posts.map(p => {
         return (<Post key={p.id} message={p.message} likes={p.likes}/>)
     })
-    let addPost = () => {
-        props.addPost(props.newPostText)
+    let onAddPost = () => {
+        props.addPost()
     }
     let onPostChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
-        props.updatePostText(e.currentTarget.value);
+        props.updateNewPost(e.currentTarget.value)
+
     }
     return (
         <div>
@@ -26,12 +21,12 @@ const MyPosts = (props: postsPropsType) => {
                 <div>
                     <textarea onChange={onPostChange} onKeyPress={(e) => {
                         if (e.key === "Enter") {
-                            addPost()
+                            onAddPost()
                         }
                     }
-                    } value={props.newPostText}/>
+                    } value={props.profilePage.newPostText}/>
                 </div>
-                <button onClick={addPost}>Add post</button>
+                <button onClick={onAddPost}>Add post</button>
             </div>
             {postElements}
         </div>

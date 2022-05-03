@@ -1,12 +1,10 @@
 import React from 'react';
 import s from "./SideBar.module.css";
-import state, {friendNameType} from "../Redux/State";
+import {SideBarPropsType} from "./SideBarContainer";
 
-type SideBarPropsType = {
-    friendsNames: Array<friendNameType>
-}
+
 const SideBar = (props: SideBarPropsType) => {
-    const mappedItems = props.friendsNames.map(f => {
+    const mappedItems = props.sideBar.friendsNames.map(f => {
         return (
             <div key={f.friendName}>
                 <div className={s.ava}><img src="http://img10.joyreactor.cc/pics/post/art-%D0%B4%D0%B5%D0%B2%D1%83%D1%88%D0%BA%D0%B0-art-Fantasy-elf-5982712.jpeg" alt="#"/></div>
