@@ -35,7 +35,7 @@ const Messages = (props: MessagesPropsType) => {
                             }
                         }
                         } /></div>
-                        <div>
+                        <div>1
                             <button onClick={onAddMessage}>Add message</button>
                         </div>
                     </div>
